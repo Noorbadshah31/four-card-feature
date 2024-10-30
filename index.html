@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Fraunces:opsz,wght@9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(0, 0%, 98%);
+      font-family: poppins;
+    }
+
+    #light-heading {
+      font-weight: 200;
+      color: hsl(234, 12%, 34%);
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    section>.header {
+      width: 500px;
+      text-align: center;
+    }
+
+    section .header h1 {
+      color: hsl(234, 12%, 34%);
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    section .header p {
+      color: hsl(229, 6%, 66%);
+    }
+
+    section .four-cards {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 50px;
+      flex-wrap: wrap;
+    }
+
+    .double-card {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 5px;
+      width: 325px;
+      overflow: hidden;
+      box-shadow: 1px 10px 20px hsla(234, 12%, 34%, 20%);
+    }
+
+    .card h3 {
+      margin: 0;
+      color: hsl(234, 12%, 34%);
+    }
+
+    .card img {
+      float: right;
+      margin: 25px 0;
+    }
+
+    .card p {
+      color: hsl(229, 6%, 66%);
+      font-size: 12px;
+      width: 90%;
+    }
+
+    .card .first {
+      border-top: 5px hsl(180, 62%, 55%) solid;
+      padding: 25px;
+    }
+
+    .card .second {
+      border-top: 5px hsl(0, 78%, 62%) solid;
+      padding: 25px;
+    }
+
+    .card .third {
+      border-top: 5px hsl(34, 97%, 64%) solid;
+      padding: 25px;
+    }
+
+    .card .fourth {
+      border-top: 5px hsl(212, 86%, 64%) solid;
+      padding: 25px;
+    }
+
+    @media (max-width:1100px) {
+      section .four-cards {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 50px;
+        flex-wrap: wrap;
+      }
+
+      .double-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+      }
+
+      @media (max-width:500px) {
+        section>.header {
+          width: 100%;
+          text-align: center;
+        }
+
+        section {
+          width: 90%;
+        }
+
+        section .four-cards {
+          margin-top: 0;
+        }
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="header">
+      <h1 id="light-heading">Reliable, efficient delivery</h1>
+      <h1>Powered by Technology</h1>
+      <p>Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is
+        successful</p>
+    </div>
+    <div class="four-cards">
+      <div class="card">
+        <div class="first">
+          <h3>Supervisor</h3>
+          <p>Monitors activity to identify project roadblocks</p>
+          <img src="./images/icon-supervisor.svg" alt="">
+        </div>
+      </div>
+      <div class="double-card">
+        <div class="card">
+          <div class="second">
+            <h3>Team Builder</h3>
+            <p>Scans our talent network to create the optimal team for your project</p>
+            <img src="./images/icon-team-builder.svg" alt="">
+          </div>
+        </div>
+        <div class="card">
+          <div class="third">
+            <h3>Karma</h3>
+            <p>Regularly evaluates our talent to ensure quality</p>
+            <img src="./images/icon-karma.svg" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="fourth">
+          <h3>Calculator</h3>
+          <p>Uses data from past projects to provide better delivery estimates</p>
+          <img src="./images/icon-calculator.svg" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
